@@ -15,6 +15,7 @@ app.post('/users',(req,res)=>{
     const {name}=req.body;
     res.send(`My name is ${name}`)
 });
+//http://localhost:3000/api/nidhi/11
 app.get('/api/:name/:rollno',(req,res) => {
     try {
         const { name, rollno} = req.params;
@@ -63,4 +64,4 @@ app.listen(port,()=>{
 //PATCH -> minor changes
 //DELETE -> delete user
 
-//http://localhost:3000/api?name=Rajesh (to get name of any user through query string using ? )
+//http://localhost:3000/api?name=Rajesh (to get name of any user through query string using ? => to find something in array)
